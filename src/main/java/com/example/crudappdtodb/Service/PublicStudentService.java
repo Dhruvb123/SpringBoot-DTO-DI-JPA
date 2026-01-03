@@ -41,7 +41,7 @@ public class PublicStudentService implements IStudentService {
         throw new UnsupportedOperationException();
     }
 
-    public void delete(Long id) {
+    public void delete(Long ide) {
         throw new UnsupportedOperationException();
     }
 }

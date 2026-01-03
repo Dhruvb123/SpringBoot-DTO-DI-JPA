@@ -1,7 +1,7 @@
 package com.example.crudappdtodb.Controller;
 
 import com.example.crudappdtodb.DTO.StudentDTO;
-import com.example.crudappdtodb.Service.AdminStudentService;
+import com.example.crudappdtodb.Service.IStudentService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,10 +11,10 @@ import java.util.List;
 @RequestMapping("/api/admin/students")
 public class AdminStudentController {
 
-    private final AdminStudentService service;
+    private final IStudentService service;
 
     public AdminStudentController(
-            @Qualifier("admin") AdminStudentService service) {
+            @Qualifier("admin") IStudentService service) {
         this.service = service;
     }
 

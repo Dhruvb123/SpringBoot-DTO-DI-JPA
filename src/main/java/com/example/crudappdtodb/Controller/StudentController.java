@@ -1,7 +1,7 @@
 package com.example.crudappdtodb.Controller;
 
 import com.example.crudappdtodb.DTO.StudentDTO;
-import com.example.crudappdtodb.Service.PublicStudentService;
+import com.example.crudappdtodb.Service.IStudentService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -9,9 +9,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/public/students")
 public class StudentController {
-    private final PublicStudentService service;
+    private final IStudentService service;
 
-    public StudentController(PublicStudentService service) {
+    public StudentController(IStudentService service) {
         this.service = service;
     }
 
